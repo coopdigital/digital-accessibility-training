@@ -1,0 +1,171 @@
+---
+title: Co-op prototyping kit
+subtitle: A project scaffold for building prototypes with Eleventy and the Co-op front-end.
+layout: layouts/base.njk
+---
+<div class="coop-l-container">
+    <div class="coop-l-grid coop-u-margin-b-64">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-7">
+            <h1>{{ title }}</h1>
+            {%- if subtitle %}<p class="coop-t-lead-p">{{ subtitle | safe }}</p>{% endif %}
+            <p>On this page are examples of the:</p>
+            <ul>
+                <li><a href="#foundations">Foundations</a></li>
+                <li><a href="#elements">Elements</a></li>
+                <li><a href="#layout">Layout</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#patterns">Patterns</a></li>
+            </ul>
+            <p>You can use these in prototypes by opening the _includes folder, navigating to the code snippet then copying and pasting it.</p>
+            <p><a href="https://pioneer-design-system.herokuapp.com">Go to the Experience Library</a> to find out how to apply the foundations, elements, components and patterns to your designs.</p>
+            <p>You can pass data around pages by copying the <a href="/form/">form example</a> and following the <a href="https://github.com/coopdigital/11ty-prototyping-kit#readme">instructions in the readme</a> file to create your own interactive prototypes.
+        </div>
+    </div>
+    <div class="coop-l-grid coop-u-margin-b-64">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
+            <h2 id="foundations">Foundations</h2>
+            <div class="coop-u-margin-b-64">
+                <p><a href="https://pioneer-design-system.herokuapp.com/foundations/">Go to the Experience Library guidelines on how to apply the foundations</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="coop-l-grid coop-u-margin-b-64">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
+            <h2 id="elements">Elements</h2>
+            <div class="coop-u-margin-b-64">
+                <h3>Buttons</h3>
+                {% include "elements/buttons/buttons.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Co-op Logo</h3>
+                {% include "elements/logo/logo.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Checkboxes</h3>
+                {% include "elements/forms/checkboxes.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Headings, paragraphs and lists</h3>
+                {% include "elements/typography/scale.html" %}
+                {% include "elements/typography/lists.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Inputs</h3>
+                {% include "elements/forms/inputs.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Links</h3>
+                {% include "elements/links/links.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Quotes</h3>
+                {% include "elements/typography/quotes.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Radio buttons</h3>
+                {% include "elements/forms/radio-buttons.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Select dropdowns</h3>
+                {% include "elements/forms/select-dropdowns.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Tables</h3>
+                {% include "elements/tables/tables.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Textareas</h3>
+                {% include "elements/forms/textareas.html" %}
+            </div>
+        </div>
+    </div>
+    <div class="coop-l-grid coop-u-margin-b-64">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
+            <h2 id="layout">Layout</h2>
+            <div class="coop-u-margin-b-64">
+                <div class="coop-u-margin-b-32">
+                    <h3>Grid</h3>
+                    {% include "layout/grid.html" %}
+                </div>
+                <div class="coop-u-margin-b-32">
+                    <h3>Centring</h3>
+                    {% include "layout/centring.html" %}
+                </div>
+                <div class="coop-u-margin-b-32">
+                    <h3>Offset</h3>
+                    {% include "layout/offset.html" %}
+                </div>
+                <div class="coop-u-margin-b-32">
+                    <h3>Reverse order</h3>
+                    {% include "layout/reverse-order.html" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coop-l-grid coop-u-margin-b-64">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
+            <h2 id="components">Components</h2>
+            <div class="coop-u-margin-b-32">
+                <h3>Alert notification</h3>
+                {% include "components/alert-notification.html" %}
+            </div>
+            <div class="coop-u-margin-b-32">
+                <h3>Error notification</h3>
+                {% include "components/error-notification.html" %}
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Success notification</h3>
+                {% include "components/success-notification.html" %}
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-4">
+                    <div class="coop-u-margin-b-32">
+                        <h3>Editorial card</h3>
+                        {% include "components/editorial-card.html" %}
+                    </div>
+                </div>   
+            </div>
+            <div class="coop-l-grid coop-u-margin-b-64">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-10">
+                    <div class="coop-u-margin-b-32">
+                        <h3>Editorial card horizontal</h3>
+                        {% include "components/editorial-card-horizontal.html" %}
+                    </div>
+                </div>
+            </div>
+            <div class="coop-l-grid">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-4">              
+                    <h3>Feature card</h3>
+                    {% include "components/feature-card.html" %}
+                </div>
+            </div>
+            <div class="coop-l-grid coop-u-margin-b-64">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-8">
+                    <div class="coop-u-margin-b-32">
+                        <h3>Feature card horizontal</h3>
+                        {% include "components/feature-card-horizontal.html" %}
+                    </div>
+                </div>
+            </div>
+            <div class="coop-u-margin-b-64">
+                <h3>Hero banner</h3>
+                {% include "components/hero-banner.html" %} 
+            </div>  
+            <div class="coop-l-grid coop-u-margin-b-64">
+                <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-4"> 
+                    <h3>Signpost navigation</h3>
+                    {% include "components/signpost.html" %} 
+                </div>  
+            </div> 
+        </div>
+    </div>
+    <div class="coop-l-grid coop-u-margin-b-64">
+        <div class="coop-l-grid__item coop-l-grid__item--small-12 coop-l-grid__item--large-12">
+            <h2 id="patterns">Patterns</h2>
+            <div class="coop-u-margin-b-32">
+                <h3>Date input</h3>
+                {% include "patterns/date-input.html" %}
+            </div> 
+        </div>
+    </div>
+</div>
