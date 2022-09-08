@@ -4,27 +4,9 @@
 
 ---
 
-# Co-op prototyping kit
-
-[![Heroku](https://heroku-badge.herokuapp.com/?app=eleventy-prototyping-kit)](https://eleventy-prototyping-kit.herokuapp.com/)
-
-A project scaffold that can be used for prototypes that can be deployed to Heroku for user research. This is not intended to be used for production websites.
-
-This project is based on the [Eleventyone starter created by Phil Hawksworth](https://github.com/philhawksworth/eleventyone).
-
-[Eleventy](https://11ty.io) is very similar to jekyll the static site generator used in the old prototyping kit - however we're hoping this is far simpler to set up and use.
-
-Included:
-
-- [Eleventy](https://11ty.io) with a skeleton site
-- A CSS pipeline with PostCSS
-- An inline JS pipeline
-- The Co-op foundations, elements and components ready to use
-- [Browsersync](https://browsersync.io/) for testing
-- Instructions on how to deploy to Heroku
-
-
 ## Instructions
+
+Built on the [11ty prototyping kit](https://github.com/coopdigital/11ty-prototyping-kit).
 
 ### Getting started
 To get a copy ready to work with:
